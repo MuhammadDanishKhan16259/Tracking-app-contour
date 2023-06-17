@@ -1,0 +1,141 @@
+:root {
+  --primary:#3665C5;
+  --error:#e7195a;
+
+  font-family:  cursive , Helvetica, Arial, sans-serif;  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+a{
+  text-decoration: none !important;
+  
+}
+body{
+  background-color: #f3f4f6 !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  background: #fff;
+}
+
+header .container{
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+p > span, h1 > span{
+  color: #3665C5;
+}
+.pages{
+  max-width: 96vw;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.nav-btn{
+  background-color: var(--primary) !important;
+  
+}
+
+.nav_btn2{
+  color: var(--primary) !important;
+  /* background: rgb(252, 249, 249) !important; */
+}
+.nav-btn:hover{
+  background-color: #F1F1F1 !important;
+  color: #3665C5 !important;
+}
+.nav_btn2:hover{
+  background-color: var(--primary) !important;
+  color: #fff !important;
+}
+.nav-side{
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home{
+  width: 70vw;
+  background-color: #3665C5;
+}
+
+.home2{
+  width: 30vw;
+  background-color: #e7195a;
+}
+.workout-form{
+  /* position: fixed; */
+  max-width: min-content;
+  display: flex;
+  flex-direction: column;
+}
+.nav1{
+  display: none !important;
+}
+
+div.error{
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+input.error{
+  border: 1px solid var(--error) !important;
+}
+
+.signup-form{
+  max-width: 500px;
+}
+.input-group, .form-control, .input-group-text{
+  border: 1px solid #fff !important;
+  outline: none !important;
+  
+}
+.input-group :focus{
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+  /* background-color: #fff !important; */
+}
+
+.btn-div{
+  display: flex;
+  gap: 20px;
+}
+.text-div{
+  margin-top: 100px;
+  max-width: 600px;
+}
+
+.error-page img{
+  width: 40vw !important;
+}
+
+.no-data {
+  width: 50vw !important;
+}
+
+.no-data img{
+ margin-top: -20px !important;
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .hide-form{
+  display: none !important;
+  }
+  .nav1{
+    display: flex !important;
+  }
+ }
